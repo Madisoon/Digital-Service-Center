@@ -5,10 +5,12 @@ spring:
   application:
     name: config-service
   cloud:
+  ## git相关的配置
     config:
       server:
         git:
           uri: https://github.com/Madisoon/Digital-Service-Center.git
+          label: master
           username: zgyxx091418@163.com
           password: 091418wa!
           search-paths: /git-config-file
