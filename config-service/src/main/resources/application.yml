@@ -8,9 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/
+          uri: https://github.com/Madisoon/Digital-Service-Center.git
           username: zgyxx091418@163.com
           password: 091418wa!
+          search-paths: /git-config-file
 ## 向服务中心注册服务
 eureka:
   client:
