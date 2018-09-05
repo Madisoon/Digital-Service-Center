@@ -1,1 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://14.116.254.127:13306/manage_task
+    username: mysql
+    password: mysql123
 
+  redis:
+      host: 127.0.0.1
+      port: 6379
+      password: 199518wa!
+
+system:
+  token: 199518wa!

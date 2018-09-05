@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-service
+        label: master
+        profile: dev
+        uri: http://localhost:5200/

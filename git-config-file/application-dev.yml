@@ -1,21 +1,14 @@
-server:
-  port: 5200
-
 spring:
-  application:
-    name: config-service
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/Madisoon/Digital-Service-Center.git
-          username: zgyxx091418@163.com
-          password: 091418wa!
-          search-paths: /git-config-file
-## 向服务中心注册服务
-eureka:
-  client:
-    registerWithEureka: true #是否将自己注册到Eureka服务中，默认为true
-    fetchRegistry: true #是否从Eureka中获取注册信息，默认为true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://14.116.254.127:13306/manage_task
+    username: mysql
+    password: mysql123
+
+  redis:
+      host: 127.0.0.1
+      port: 6379
+      password: 199518wa!
+
+system:
+  token: 199518wa!
