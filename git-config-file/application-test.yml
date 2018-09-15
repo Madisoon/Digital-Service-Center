@@ -5,9 +5,17 @@ spring:
     username: mysql
     password: mysql123
 
+### redis缓存配置
   redis:
-      host: 127.0.0.1
-      port: 6379
+    host: 127.0.0.1
+    port: 6379
+
+### rabbitmq配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 15672
+    username: guest
+    password: guest
 
 system:
   token: 199518wa!

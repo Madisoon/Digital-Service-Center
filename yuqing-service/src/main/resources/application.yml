@@ -1,7 +1,6 @@
 spring:
   application:
     name: yuqing-service
-
 server:
   port: 5611
 

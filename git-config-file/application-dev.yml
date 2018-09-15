@@ -14,8 +14,8 @@ spring:
   rabbitmq:
     host: 127.0.0.1
     port: 15672
-    username: springcloud
-    password: 123456
+    username: guest
+    password: guest
 
 system:
   token: 199518wa!
