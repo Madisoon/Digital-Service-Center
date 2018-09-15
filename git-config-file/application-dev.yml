@@ -5,10 +5,17 @@ spring:
     username: mysql
     password: mysql123
 
+### redis缓存配置
   redis:
-      host: 127.0.0.1
-      port: 6379
-      password: 199518wa!
+    host: 127.0.0.1
+    port: 6379
+
+### rabbitmq配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 15672
+    username: springcloud
+    password: 123456
 
 system:
   token: 199518wa!
