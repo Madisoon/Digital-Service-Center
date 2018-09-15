@@ -13,7 +13,7 @@ spring:
 ### rabbitmq配置
   rabbitmq:
     host: 127.0.0.1
-    port: 15672
+    port: 5672
     username: guest
     password: guest
 
