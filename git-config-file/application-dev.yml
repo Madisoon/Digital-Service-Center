@@ -12,7 +12,7 @@ spring:
     timeout: 50000
     sentinel:
       master: mymaster
-      nodes: 127.0.0.1:9681, 127.0.0.1:9682, 127.0.0.1:9683
+      nodes: 127.0.0.1:9618, 127.0.0.1:9619, 127.0.0.1:9620
 
 ### rabbitmq配置
   rabbitmq:
