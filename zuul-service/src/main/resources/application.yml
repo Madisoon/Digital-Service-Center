@@ -3,7 +3,7 @@ spring:
     name: zuul-service
 
 server:
-  port: 4200
+  port: 5662
 
 ## 向服务中心注册服务
 eureka:

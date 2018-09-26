@@ -1,6 +1,13 @@
+
 spring:
   application:
     name: yuqing-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 server:
   port: 5611
 
