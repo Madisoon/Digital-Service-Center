@@ -9,6 +9,10 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
+    timeout: 60000
+    sentinel:
+      master: mymaster
+      nodes: 127.0.0.1:9681, 127.0.0.1:9682, 127.0.0.1:9683
 
 ### rabbitmq配置
   rabbitmq:
