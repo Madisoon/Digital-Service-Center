@@ -2,6 +2,7 @@ package com.madisoon.cloud.config.websocket;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.*;
 
@@ -20,31 +21,25 @@ import java.util.Map.Entry;
 @Component
 public class MyWebSocketHandler implements WebSocketHandler {
     /**
-     * 最重要的websocket处理程序（包括发送信息，接收信息，信息错误等方法。）
-     */
-
-    /**
      * 先注册一个websocket服务器，将连接上的所有用户放进去
      */
-    public static final Map<Long, WebSocketSession> USER_SOCKET_SESSION_MAP;
+    private static final Map<Long, WebSocketSession> USER_SOCKET_SESSION_MAP;
 
     static {
-        USER_SOCKET_SESSION_MAP = new HashMap<Long, WebSocketSession>();
+        USER_SOCKET_SESSION_MAP = new HashMap<>();
     }
 
     /**
      * 前台连接并且注册了账户
      */
     @Override
-    public void afterConnectionEstablished(WebSocketSession session) throws Exception {
+    public void afterConnectionEstablished(@NonNull WebSocketSession session) {
         Long uid = (Long) session.getAttributes().get("uid");
-        if (USER_SOCKET_SESSION_MAP.get(uid) == null) {
-            USER_SOCKET_SESSION_MAP.put(uid, session);
-        }
+        USER_SOCKET_SESSION_MAP.putIfAbsent(uid, session);
     }
 
     @Override
-    public void handleMessage(WebSocketSession session, WebSocketMessage<?> message) throws Exception {
+    public void handleMessage(@NonNull WebSocketSession session, @NonNull WebSocketMessage<?> message) {
         if (message.getPayloadLength() == 0) {
             return;
         }
@@ -57,7 +52,7 @@ public class MyWebSocketHandler implements WebSocketHandler {
      * 消息传输错误处理，如果出现错误直接断开连接
      */
     @Override
-    public void handleTransportError(WebSocketSession session, Throwable exception) throws Exception {
+    public void handleTransportError(@NonNull WebSocketSession session, @NonNull Throwable exception) throws Exception {
         if (session.isOpen()) {
             session.close();
         }
@@ -68,8 +63,7 @@ public class MyWebSocketHandler implements WebSocketHandler {
      * 关闭连接后
      */
     @Override
-    public void afterConnectionClosed(WebSocketSession session, CloseStatus closeStatus) throws Exception {
-        System.out.println("Websocket:" + session.getId() + "已经关闭");
+    public void afterConnectionClosed(@NonNull WebSocketSession session, @NonNull CloseStatus closeStatus) {
         removeWebSocketUser(session);
     }
 
@@ -81,10 +75,9 @@ public class MyWebSocketHandler implements WebSocketHandler {
     /**
      * 给所有在线用户发送消息
      *
-     * @param message
-     * @throws IOException
+     * @param message 信息内容
      */
-    public void broadcast(final TextMessage message) throws IOException {
+    public void broadcast(TextMessage message) {
         Iterator<Entry<Long, WebSocketSession>> it = USER_SOCKET_SESSION_MAP.entrySet().iterator();
         // 多线程群发（给所有在线的用户发送消息）  先判断是否里面有用户（）然后循环发消息
         /*后台调用sendMessage方法的时候，前台会触发onmessage*/
@@ -110,18 +103,22 @@ public class MyWebSocketHandler implements WebSocketHandler {
     /**
      * 单个用户发消息
      *
-     * @param message
-     * @throws IOException
+     * @param uid     用户id
+     * @param message 信息内容
      */
-    public void sendMessageToUser(Long uid, TextMessage message) throws IOException {
+    public void sendMessageToUser(Long uid, TextMessage message) {
         //根据传过来的账号，在websocketseesion的服务器里面找，接收者注册的账号
         WebSocketSession session = USER_SOCKET_SESSION_MAP.get(uid);
         if (session != null && session.isOpen()) {
-            session.sendMessage(message);
+            try {
+                session.sendMessage(message);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    public void removeWebSocketUser(WebSocketSession session) {
+    private void removeWebSocketUser(WebSocketSession session) {
         Iterator<Entry<Long, WebSocketSession>> it = USER_SOCKET_SESSION_MAP.entrySet().iterator();
         // 移除Socket会话
         while (it.hasNext()) {

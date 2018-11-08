@@ -5,7 +5,7 @@ spring:
     username: mysql
     password: mysql123
 
-### redis缓存配置
+  ### redis缓存配置
   redis:
     host: 127.0.0.1
     port: 6379
@@ -14,7 +14,7 @@ spring:
       master: mymaster
       nodes: 127.0.0.1:9618, 127.0.0.1:9619, 127.0.0.1:9620
 
-### rabbitmq配置
+  ### rabbitmq配置
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -23,3 +23,10 @@ spring:
 
 system:
   token: 199518wa123!
+
+mail:
+  account: report@yuwoyg.com
+  password: sytc123456!
+  host: smtp.yuwoyg.com
+  from: 舆我有关
+  to: 舆情客户

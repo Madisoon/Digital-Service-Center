@@ -3,6 +3,7 @@ package com.madisoon.cloud.config.websocket;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.http.server.ServletServerHttpRequest;
+import org.springframework.lang.NonNull;
 import org.springframework.web.socket.WebSocketHandler;
 import org.springframework.web.socket.server.HandshakeInterceptor;
 
@@ -15,14 +16,20 @@ import java.util.Map;
  * @date 2018年9月11日 下午2:23:09
  */
 public class HandShake implements HandshakeInterceptor {
+    /**
+     * 握手协议
+     *
+     * @param request    请求
+     * @param response   响应
+     * @param wsHandler  握手协议
+     * @param attributes map对象
+     * @return 握手状态
+     */
     @Override
-    public boolean beforeHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler,
-                                   Map<String, Object> attributes) throws Exception {
-        /**
-         * websocket系统启动连接程序，启动的时候就会把他的session值传过来，放入到websocketsession（websocket的一个内置服务器）里面
-         */
+    public boolean beforeHandshake(@NonNull ServerHttpRequest request, @NonNull ServerHttpResponse response, @NonNull WebSocketHandler wsHandler,
+                                   @NonNull Map<String, Object> attributes) {
         ServletServerHttpRequest servletRequest = (ServletServerHttpRequest) request;
-        Long uid = Long.parseLong(servletRequest.getServletRequest().getParameter("uid"));
+        long uid = Long.parseLong(servletRequest.getServletRequest().getParameter("uid"));
         if (uid != 0) {
             attributes.put("uid", uid);
         } else {
@@ -32,7 +39,7 @@ public class HandShake implements HandshakeInterceptor {
     }
 
     @Override
-    public void afterHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler,
+    public void afterHandshake(@NonNull ServerHttpRequest request, @NonNull ServerHttpResponse response, @NonNull WebSocketHandler wsHandler,
                                Exception exception) {
     }
 }

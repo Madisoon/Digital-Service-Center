@@ -5,29 +5,38 @@ import java.util.Date;
 /**
  * 消息类
  *
- * @date Goofy
+ * @author zg
+ * @date 2015年6月11日 下午1:15:09
  */
 public class NotificationMessage {
     /**
      * 发送者账号
      */
-    public Long from;
+    private Long from;
     /**
      * 发送者名称
      */
-    public String fromName;
+    private String fromName;
     /**
      * 接收者账号
      */
-    public Long to;
+    private Long to;
     /**
      * 发送的内容
      */
-    public String text;
+    private String text;
     /**
      * 发送的日期
      */
-    public Date date;
+    private Date date;
+
+    public NotificationMessage(Long from, String fromName, Long to, String text, Date date) {
+        this.from = from;
+        this.fromName = fromName;
+        this.to = to;
+        this.text = text;
+        this.date = date;
+    }
 
     public Long getFrom() {
         return from;

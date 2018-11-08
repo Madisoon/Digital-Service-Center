@@ -9,11 +9,10 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Description:
@@ -32,7 +31,6 @@ public class CommonController {
      *
      * @param file 需要上传的文件
      * @return 文件的地址
-     * @throws IOException
      */
     @PostMapping(value = "/singleFileUpload")
     public String singleFileUpload(@RequestParam("file") MultipartFile file) throws IOException {
@@ -58,15 +56,16 @@ public class CommonController {
     @PostMapping(value = "/multipleFileUpload")
     public String multipleFileUpload(HttpServletRequest request) {
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
-        MultipartFile file = null;
+        MultipartFile file;
         BufferedOutputStream stream;
-        for (int i = 0; i < files.size(); ++i) {
+        for (int i = 0; i < files.size(); i++) {
             file = files.get(i);
             if (!file.isEmpty()) {
                 try {
                     byte[] bytes = file.getBytes();
+                    Optional<String> fileName = Optional.ofNullable(file.getOriginalFilename());
                     stream = new BufferedOutputStream(new FileOutputStream(
-                            new File(file.getOriginalFilename())));
+                            new File(fileName.orElse(""))));
                     stream.write(bytes);
                     stream.close();
                 } catch (Exception e) {
