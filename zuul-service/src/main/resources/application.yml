@@ -5,6 +5,7 @@ spring:
 server:
   port: 5662
 
+
 ## 向服务中心注册服务
 eureka:
   client:
@@ -18,3 +19,11 @@ loginFilter:
 #跨域请求拦截器相关配置
 tokenFilter:
   enable: true;
+
+zuul:
+  routes:
+    yuqing-service:
+      path: /yuqing-service/**
+      strip-prefix: true
+      sensitiveHeaders:
+      serviceId: yuqing-service

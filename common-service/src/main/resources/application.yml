@@ -1,6 +1,8 @@
-# spring boot配置 解决文件上大小限制的问题
+# spring boot配置 解决文件上大小限制的问题,*单位全部要大写
 spring:
+  application:
+    name: common-service
   servlet:
     multipart:
-      maxFileSize: 10Mb
-      maxRequestSize: 10Mb
+      max-file-size: 30MB
+      max-request-size: 30MB

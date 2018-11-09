@@ -1,7 +1,5 @@
 package com.madisoon.cloud;
 
-import com.madisoon.starter.email.JavaMailWithAttachment;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,14 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 @RefreshScope
 public class YuqingServiceApplication {
-
-    /*private JavaMailWithAttachment javaMailWithAttachment;
-
-    @Autowired
-    public YuqingServiceApplication(JavaMailWithAttachment javaMailWithAttachment) {
-        this.javaMailWithAttachment = javaMailWithAttachment;
-    }*/
-
     public static void main(String[] args) {
         SpringApplication.run(YuqingServiceApplication.class, args);
     }
