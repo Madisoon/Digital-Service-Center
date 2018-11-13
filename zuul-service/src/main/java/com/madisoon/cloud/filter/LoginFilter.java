@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
  * @author Msater Zg
  * @date 2018/9/9 下午8:47
  */
+
 public class LoginFilter extends ZuulFilter {
 
     @Value("${loginFilter.enable}")
@@ -32,11 +33,13 @@ public class LoginFilter extends ZuulFilter {
 
     @Override
     public boolean shouldFilter() {
+        System.out.println("123123123");
         return filterEnable;
     }
 
     @Override
     public Object run() throws ZuulException {
+        System.out.println("123123123");
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         HttpSession session = request.getSession();

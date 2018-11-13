@@ -24,6 +24,5 @@ zuul:
   routes:
     yuqing-service:
       path: /yuqing-service/**
-      strip-prefix: true
       sensitiveHeaders:
       serviceId: yuqing-service

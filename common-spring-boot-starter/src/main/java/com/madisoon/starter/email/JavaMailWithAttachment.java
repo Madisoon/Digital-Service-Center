@@ -1,7 +1,6 @@
 package com.madisoon.starter.email;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import lombok.Data;
 
 import javax.activation.DataHandler;
 import javax.activation.FileDataSource;
@@ -18,22 +17,15 @@ import java.util.Properties;
  * @date 2018/11/6 11:10 AM
  */
 
-@EnableConfigurationProperties
 public class JavaMailWithAttachment {
-
-    @Value("${mail.account}")
     private String mailAccount;
 
-    @Value("${mail.password}")
     private String mailPassword;
 
-    @Value("${mail.host}")
     private String mailSmtpHost;
 
-    @Value("${mail.from}")
     private String mailFrom;
 
-    @Value("${mail.to}")
     private String mailTo;
 
     private final static String MAIL_CHARSET = "UTF-8";
@@ -46,7 +38,12 @@ public class JavaMailWithAttachment {
 
     private static Transport transport;
 
-    public JavaMailWithAttachment() {
+    public JavaMailWithAttachment(JavaMailProperties javaMailProperties) {
+        this.mailAccount = javaMailProperties.getAccount();
+        this.mailPassword = javaMailProperties.getPassword();
+        this.mailSmtpHost = javaMailProperties.getHost();
+        this.mailFrom = javaMailProperties.getFrom();
+        this.mailTo = javaMailProperties.getTo();
         initMail();
     }
 

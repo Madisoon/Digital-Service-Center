@@ -1,5 +1,9 @@
 package com.madisoon.cloud;
 
+import com.madisoon.starter.email.JavaMailWithAttachment;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,15 +24,30 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 @RefreshScope
 public class YuqingServiceApplication {
+    private final static Logger LOGGER = LoggerFactory.getLogger(YuqingServiceApplication.class);
+
+    private JavaMailWithAttachment javaMailWithAttachment;
+
+    @Autowired
+    public YuqingServiceApplication(JavaMailWithAttachment javaMailWithAttachment) {
+        this.javaMailWithAttachment = javaMailWithAttachment;
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(YuqingServiceApplication.class, args);
     }
 
-    @Value("${system.token}") // git配置文件里的key
-            String myww;
+    @Value("${mail.account}")
+    String token;
 
     @RequestMapping(value = "/hi")
     public String hi() {
-        return myww;
+        try {
+            javaMailWithAttachment.postEmail("597254678@qq.com", "舆情信息", "小可爱");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        LOGGER.info("测试logback的日志打印--- {}", "asdasd");
+        return token;
     }
 }

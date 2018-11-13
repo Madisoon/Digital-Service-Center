@@ -23,6 +23,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <swagger2.version>2.8.0</swagger2.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <logback.version>1.1.11</logback.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
     </properties>
 
@@ -60,15 +62,22 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--日志打印相关的jar-->
         <dependency>
-            <groupId>org.springframework.integration</groupId>
-            <artifactId>spring-integration-core</artifactId>
-            <version>5.1.0.RELEASE</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>19.0</version>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
         </dependency>
 
         <!-- swagger2 依赖 -->
@@ -82,11 +91,11 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger2.version}</version>
         </dependency>
-        <!--        <dependency>
-                    <groupId>com.madisoon.cloud</groupId>
-                    <artifactId>common-spring-boot-starter</artifactId>
-                    <version>1.0-SNAPSHOT</version>
-                </dependency>-->
+        <dependency>
+            <groupId>com.madisoon.cloud</groupId>
+            <artifactId>common-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

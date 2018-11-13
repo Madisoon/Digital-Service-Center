@@ -19,3 +19,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+mail:
+  account: report@yuwoyg.com
+  password: sytc123456!
+  host: smtp.yuwoyg.com
+  from: 舆我有关
+  to: 舆情客户
