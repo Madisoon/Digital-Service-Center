@@ -1,6 +1,5 @@
 package com.madisoon.starter.email;
 
-import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**

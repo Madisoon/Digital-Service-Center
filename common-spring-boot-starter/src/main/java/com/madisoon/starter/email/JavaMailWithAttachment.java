@@ -1,7 +1,5 @@
 package com.madisoon.starter.email;
 
-import lombok.Data;
-
 import javax.activation.DataHandler;
 import javax.activation.FileDataSource;
 import javax.mail.*;
