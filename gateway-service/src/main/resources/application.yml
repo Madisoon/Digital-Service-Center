@@ -9,7 +9,7 @@ spring:
         - Path=/yuqing-service/**
         # 过滤的order,根据顺序依次过滤
         filters:
-        # 注意配置的格式，熔断器配置，当然还可以自己写，继承AbstractGatewayFilterFactory
+        # 注意配置的格式，熔断器配置，当然还可以自己写，继承AbstractGatewayFilterFactory，就可以采用Hystrix=XXX的形式了
         - name: Hystrix
           args:
             name: errorFallback
@@ -28,4 +28,4 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 6000
