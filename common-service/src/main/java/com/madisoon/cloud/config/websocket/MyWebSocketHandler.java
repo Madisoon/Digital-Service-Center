@@ -2,15 +2,13 @@ package com.madisoon.cloud.config.websocket;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.madisoon.cloud.utils.ThreadPoolUtil;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.*;
 
 import java.io.IOException;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
 
 /**
@@ -20,6 +18,7 @@ import java.util.Map.Entry;
  */
 @Component
 public class MyWebSocketHandler implements WebSocketHandler {
+
     /**
      * 先注册一个websocket服务器，将连接上的所有用户放进去
      */
@@ -38,6 +37,10 @@ public class MyWebSocketHandler implements WebSocketHandler {
         USER_SOCKET_SESSION_MAP.putIfAbsent(uid, session);
     }
 
+    /**
+     * @param session 通信服务器
+     * @param message Websocket文本
+     */
     @Override
     public void handleMessage(@NonNull WebSocketSession session, @NonNull WebSocketMessage<?> message) {
         if (message.getPayloadLength() == 0) {
@@ -73,31 +76,25 @@ public class MyWebSocketHandler implements WebSocketHandler {
     }
 
     /**
-     * 给所有在线用户发送消息
+     * 给所有在线用户发送消息,后台调用sendMessage方法的时候，前台会触发onmessage
      *
      * @param message 信息内容
      */
     public void broadcast(TextMessage message) {
-        Iterator<Entry<Long, WebSocketSession>> it = USER_SOCKET_SESSION_MAP.entrySet().iterator();
-        // 多线程群发（给所有在线的用户发送消息）  先判断是否里面有用户（）然后循环发消息
-        /*后台调用sendMessage方法的时候，前台会触发onmessage*/
-        while (it.hasNext()) {
-            final Entry<Long, WebSocketSession> entry = it.next();
-            if (entry.getValue().isOpen()) {
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            if (entry.getValue().isOpen()) {
-                                entry.getValue().sendMessage(message);
-                            }
-                        } catch (IOException e) {
-                            e.printStackTrace();
+        Set<Entry<Long, WebSocketSession>> set = USER_SOCKET_SESSION_MAP.entrySet();
+        set.forEach(item -> {
+            if (item.getValue().isOpen()) {
+                ThreadPoolUtil.executeTaskFuture(() -> {
+                    try {
+                        if (item.getValue().isOpen()) {
+                            item.getValue().sendMessage(message);
                         }
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
-                }).start();
+                });
             }
-        }
+        });
     }
 
     /**
@@ -107,7 +104,6 @@ public class MyWebSocketHandler implements WebSocketHandler {
      * @param message 信息内容
      */
     public void sendMessageToUser(Long uid, TextMessage message) {
-        //根据传过来的账号，在websocketseesion的服务器里面找，接收者注册的账号
         WebSocketSession session = USER_SOCKET_SESSION_MAP.get(uid);
         if (session != null && session.isOpen()) {
             try {
@@ -118,15 +114,17 @@ public class MyWebSocketHandler implements WebSocketHandler {
         }
     }
 
+    /**
+     * 移除某个会话
+     *
+     * @param session 会话
+     */
     private void removeWebSocketUser(WebSocketSession session) {
-        Iterator<Entry<Long, WebSocketSession>> it = USER_SOCKET_SESSION_MAP.entrySet().iterator();
-        // 移除Socket会话
-        while (it.hasNext()) {
-            Entry<Long, WebSocketSession> entry = it.next();
-            if (entry.getValue().getId().equals(session.getId())) {
-                USER_SOCKET_SESSION_MAP.remove(entry.getKey());
-                break;
+        Set<Entry<Long, WebSocketSession>> set = USER_SOCKET_SESSION_MAP.entrySet();
+        set.forEach(item -> {
+            if (item.getValue().getId().equals(session.getId())) {
+                USER_SOCKET_SESSION_MAP.remove(item.getKey());
             }
-        }
+        });
     }
 }

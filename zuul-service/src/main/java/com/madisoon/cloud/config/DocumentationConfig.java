@@ -1,7 +1,5 @@
 package com.madisoon.cloud.config;
 
-import org.springframework.cloud.netflix.zuul.filters.Route;
-import org.springframework.cloud.netflix.zuul.filters.RouteLocator;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import springfox.documentation.swagger.web.SwaggerResource;
@@ -22,9 +20,9 @@ import java.util.List;
 public class DocumentationConfig implements SwaggerResourcesProvider {
     @Override
     public List<SwaggerResource> get() {
-        List resources = new ArrayList<>();
+        List<SwaggerResource> resources = new ArrayList<>();
         resources.add(swaggerResource("yuqing-service", "/yuqing-service/v2/api-docs", "1.0"));
-        resources.add(swaggerResource("yuqing-service", "/yuqing-service/v2/api-docs", "1.0"));
+        resources.add(swaggerResource("app-service", "/app-service/v2/api-docs", "1.1"));
         return resources;
     }
 

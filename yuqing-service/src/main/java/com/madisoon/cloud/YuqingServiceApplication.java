@@ -3,6 +3,7 @@ package com.madisoon.cloud;
 import com.madisoon.starter.email.JavaMailWithAttachment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -26,12 +27,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class YuqingServiceApplication {
     private final static Logger LOGGER = LoggerFactory.getLogger(YuqingServiceApplication.class);
 
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
     private JavaMailWithAttachment javaMailWithAttachment;
 
     @Autowired
     public YuqingServiceApplication(JavaMailWithAttachment javaMailWithAttachment) {
         this.javaMailWithAttachment = javaMailWithAttachment;
     }
+
+
 
     public static void main(String[] args) {
         SpringApplication.run(YuqingServiceApplication.class, args);
@@ -42,6 +48,8 @@ public class YuqingServiceApplication {
 
     @RequestMapping(value = "/hi")
     public String hi() {
+        rabbitTemplate.convertAndSend("amqpExchange",
+                "queue_key", "发送了一条信息");
         try {
             javaMailWithAttachment.postEmail("597254678@qq.com", "舆情信息", "小可爱");
         } catch (Exception e) {

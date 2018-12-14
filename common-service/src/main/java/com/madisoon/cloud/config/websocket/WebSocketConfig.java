@@ -24,9 +24,13 @@ public class WebSocketConfig implements WebSocketConfigurer, WebMvcConfigurer {
     @Resource
     MyWebSocketHandler handler;
 
+    /**
+     * 链接的时候，websocket会自己增加同源检测的功能，需要单独配置是否允许跨域。
+     *
+     * @param registry 连接
+     */
     @Override
     public void registerWebSocketHandlers(@NonNull WebSocketHandlerRegistry registry) {
-        // 链接的时候，websocket会自己增加同源检测的功能，需要单独配置是否允许跨域。
         registry.addHandler(handler, "/ws").addInterceptors(new HandShake()).setAllowedOrigins("*");
         registry.addHandler(handler, "/ws/sockjs").addInterceptors(new HandShake()).setAllowedOrigins("*").withSockJS();
     }

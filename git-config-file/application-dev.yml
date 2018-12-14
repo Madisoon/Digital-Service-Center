@@ -1,4 +1,5 @@
 spring:
+  ### mysql数据库配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://14.116.254.127:13306/manage_task
@@ -21,9 +22,11 @@ spring:
     username: guest
     password: guest
 
+### 系统密钥
 system:
-  token: 199518wa123!
+  token: SYTC123456789
 
+### 邮箱配置
 mail:
   account: report@yuwoyg.com
   password: sytc123456!

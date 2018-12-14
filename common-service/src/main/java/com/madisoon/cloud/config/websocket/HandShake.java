@@ -38,6 +38,14 @@ public class HandShake implements HandshakeInterceptor {
         return true;
     }
 
+    /**
+     * 连接之后（比如某某上线提醒）
+     *
+     * @param request   请求参数
+     * @param response  响应参数
+     * @param wsHandler 握手协议
+     * @param exception 异常
+     */
     @Override
     public void afterHandshake(@NonNull ServerHttpRequest request, @NonNull ServerHttpResponse response, @NonNull WebSocketHandler wsHandler,
                                Exception exception) {

@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Description:
  * 公共包的自动装配类
- * <p>
- * 果然需要配置文件，最好把相关的参数写在这个文件里面，写在单独的类文件里面不生效，
+ *
+ * 果然需要配置文件，最好把相关的参数写在这个文件里面，写在单独的类文件里面不生效
  * 默认spring boot启动的时候，会读取本类，其它类并不会读取，所有需要用注解配置的东西全部放在此类中
  *
  * @author Msater Zg

@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  * Description:
- * 简单邮件发送类
+ * 简单邮件发送类(云片)
  *
  * @author Msater Zg
  * @date 2018/11/6 13:10 AM

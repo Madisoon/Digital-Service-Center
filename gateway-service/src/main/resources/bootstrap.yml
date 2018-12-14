@@ -1,0 +1,7 @@
+# bootstap 的内容是不能被本地的application所覆盖
+server:
+  port: 5678
+
+spring:
+  application:
+    name: gateway-service

@@ -35,7 +35,7 @@ public class SwaggerConfig {
     private ApiInfo buildApiInf() {
         return new ApiInfoBuilder()
                 .title("上元天成数字化服务系统接口详情")
-                .description("Zuul+Swagger2构建RESTful APIs")
+                .description("Zuul所有微服务接口详情汇总")
                 .termsOfServiceUrl("http://www.yuwoyg.com/")
                 .contact(new Contact("sytc", "http://www.yuwoyg.com/", ""))
                 .version("1.0")

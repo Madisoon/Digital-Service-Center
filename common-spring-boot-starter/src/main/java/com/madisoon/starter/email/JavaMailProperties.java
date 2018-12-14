@@ -9,7 +9,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author Msater Zg
  * @date 2018/11/13 10:31 AM
  */
-
 @ConfigurationProperties(prefix = "mail")
 public class JavaMailProperties {
 
@@ -24,7 +23,7 @@ public class JavaMailProperties {
     private String password;
 
     /**
-     * STMPHOST地址
+     * STMPHOST
      */
     private String host;
 

@@ -16,6 +16,7 @@ import java.util.Properties;
  */
 
 public class JavaMailWithAttachment {
+
     private String mailAccount;
 
     private String mailPassword;
@@ -44,23 +45,7 @@ public class JavaMailWithAttachment {
         this.mailTo = javaMailProperties.getTo();
         initMail();
     }
-
-    /**
-     * 收件人邮箱（替换为自己知道的有效邮箱）
-     */
-    public void postEmail(String receiveMailAccount, String title, String content) throws Exception {
-        message = createMimeMessage(receiveMailAccount, title, content);
-        initTransport();
-    }
-
-    /**
-     * 收件人邮箱（替换为自己知道的有效邮箱）
-     */
-    public void postEmail(String receiveMailAccount, String title, String content, String url) throws Exception {
-        message = createMimeMessage(receiveMailAccount, title, content, url);
-        initTransport();
-    }
-
+    
     /**
      * 初始化session和transport对象
      */
@@ -83,6 +68,22 @@ public class JavaMailWithAttachment {
             e.printStackTrace();
         }
         session.setDebug(true);
+    }
+
+    /**
+     * 收件人邮箱（替换为自己知道的有效邮箱）
+     */
+    public void postEmail(String receiveMailAccount, String title, String content) throws Exception {
+        message = createMimeMessage(receiveMailAccount, title, content);
+        initTransport();
+    }
+
+    /**
+     * 收件人邮箱（替换为自己知道的有效邮箱）
+     */
+    public void postEmail(String receiveMailAccount, String title, String content, String url) throws Exception {
+        message = createMimeMessage(receiveMailAccount, title, content, url);
+        initTransport();
     }
 
     /**
