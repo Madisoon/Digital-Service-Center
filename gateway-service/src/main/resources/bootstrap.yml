@@ -5,3 +5,8 @@ server:
 spring:
   application:
     name: gateway-service
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://localhost:5200/

@@ -6,3 +6,12 @@ spring:
     multipart:
       max-file-size: 30MB
       max-request-size: 30MB
+  boot:
+    admin:
+      client:
+        url: http://localhost:5613
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
