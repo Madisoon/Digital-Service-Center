@@ -1,20 +1,18 @@
 spring:
   ### mysql数据库配置
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://14.116.254.127:13306/manage_task
-    username: mysql
-    password: mysql123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yuqingmanage
+    username: root
+    password: root123!
 
   ### redis缓存配置
   redis:
+    database: 1
     host: 127.0.0.1
     port: 6379
+    password: qazwsxedc
     timeout: 50000
-    sentinel:
-      master: mymaster
-      nodes: 127.0.0.1:9618, 127.0.0.1:9619, 127.0.0.1:9620
-
   ### rabbitmq配置
   rabbitmq:
     host: 127.0.0.1
