@@ -1,6 +1,7 @@
 package com.madisoon.starter.email;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 /**
  * Description:
@@ -10,6 +11,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @date 2018/11/13 10:31 AM
  */
 @ConfigurationProperties(prefix = "mail")
+@Component
 public class JavaMailProperties {
 
     /**

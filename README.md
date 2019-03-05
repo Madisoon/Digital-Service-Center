@@ -22,6 +22,7 @@
 
 #### eureka-service
 
-#### yuqing-service
+#### push-you-service
+> 推你app相关服务接口
 
 #### zuul-service

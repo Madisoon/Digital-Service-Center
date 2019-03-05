@@ -18,6 +18,8 @@
     <properties>
         <jemail.version>1.5.0-b01</jemail.version>
         <httpclient.version>4.5.6</httpclient.version>
+        <jwtio.version>0.6.0</jwtio.version>
+        <auth0.version>3.1.0</auth0.version>
         <poi.version>3.17</poi.version>
     </properties>
 
@@ -58,5 +60,18 @@
             <artifactId>mail</artifactId>
             <version>${jemail.version}</version>
         </dependency>
+
+        <!--jwt-->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>${auth0.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${jwtio.version}</version>
+        </dependency>
+
     </dependencies>
 </project>

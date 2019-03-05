@@ -3,10 +3,10 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: yuqing-service
-        uri: lb://yuqing-service
+      - id: push-you-service
+        uri: lb://push-you-service
         predicates:
-        - Path=/yuqing-service/**
+        - Path=/push-you-service/**
         # 过滤的order,根据顺序依次过滤
         filters:
         # 注意配置的格式，熔断器配置，当然还可以自己写，继承AbstractGatewayFilterFactory，就可以采用Hystrix=XXX的形式了
@@ -17,6 +17,7 @@ spring:
         - StripPrefix=1
         - Login=true
         - WebToken=true
+
         # 给这个过滤条
       # 表示注册中心生效
       discovery:

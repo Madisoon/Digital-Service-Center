@@ -33,7 +33,6 @@ public class LoginGatewayFilterFactory extends AbstractGatewayFilterFactory<Logi
         return (exchange, chain) -> {
             // 这边是pre过滤器
             exchange.getAttributes().put("asdas", System.currentTimeMillis());
-            // 这里面是post过滤器
             return chain.filter(exchange).then();
         };
     }

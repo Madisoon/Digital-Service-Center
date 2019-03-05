@@ -1,0 +1,18 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: wechat-service
+    ### mysql数据库配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
+## 向服务中心注册服务
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

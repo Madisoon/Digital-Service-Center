@@ -35,7 +35,6 @@ public class CommonController {
     @PostMapping(value = "/singleFileUpload")
     public String singleFileUpload(@RequestParam("file") MultipartFile file) throws IOException {
         if (!file.isEmpty()) {
-            // 新的时间类
             LocalDateTime localDateTime = LocalDateTime.now();
             DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
 
