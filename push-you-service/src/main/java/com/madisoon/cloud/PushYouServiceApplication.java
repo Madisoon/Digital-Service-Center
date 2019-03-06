@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,6 +31,7 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @EnableDiscoveryClient
 @RefreshScope
+@EnableRedisHttpSession(maxInactiveIntervalInSeconds = 86400 * 30)
 public class PushYouServiceApplication {
     private final static Logger LOGGER = LoggerFactory.getLogger(PushYouServiceApplication.class);
 

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.madisoon.cloud.mapper.SysUserMapper">
+    <resultMap id="BaseResultMap" type="com.madisoon.cloud.entity.SysUser">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="user_account" jdbcType="VARCHAR" property="userAccount"/>
+        <result column="user_password" jdbcType="VARCHAR" property="userPassword"/>
+        <result column="user_nickname" jdbcType="VARCHAR" property="userNickname"/>
+        <result column="user_phone" jdbcType="VARCHAR" property="userPhone"/>
+        <result column="user_email" jdbcType="VARCHAR" property="userEmail"/>
+        <result column="user_birth" jdbcType="VARCHAR" property="userBirth"/>
+        <result column="user_sex" jdbcType="TINYINT" property="userSex"/>
+        <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate"/>
+        <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, user_account, user_password, user_nickname, user_phone, user_email, user_birth,
+        user_sex, gmt_create, gmt_modified
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_user
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        delete
+        from sys_user
+        where id = #{id,jdbcType=BIGINT}
+    </delete>
+    <insert id="insert" parameterType="com.madisoon.cloud.entity.SysUser">
+        insert into sys_user (id,
+                              user_account,
+                              user_password,
+                              user_nickname,
+                              user_phone,
+                              user_email,
+                              user_birth,
+                              user_sex,
+                              gmt_create,
+                              gmt_modified)
+        values (#{id,jdbcType=BIGINT},
+                #{userAccount,jdbcType=VARCHAR},
+                #{userPassword,jdbcType=VARCHAR},
+                #{userNickname,jdbcType=VARCHAR},
+                #{userPhone,jdbcType=VARCHAR},
+                #{userEmail,jdbcType=VARCHAR},
+                #{userBirth,jdbcType=VARCHAR},
+                #{userSex,jdbcType=TINYINT},
+                #{gmtCreate,jdbcType=TIMESTAMP},
+                #{gmtModified,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insertSelective" parameterType="com.madisoon.cloud.entity.SysUser">
+        insert into sys_user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="userAccount != null">
+                user_account,
+            </if>
+            <if test="userPassword != null">
+                user_password,
+            </if>
+            <if test="userNickname != null">
+                user_nickname,
+            </if>
+            <if test="userPhone != null">
+                user_phone,
+            </if>
+            <if test="userEmail != null">
+                user_email,
+            </if>
+            <if test="userBirth != null">
+                user_birth,
+            </if>
+            <if test="userSex != null">
+                user_sex,
+            </if>
+            <if test="gmtCreate != null">
+                gmt_create,
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="userAccount != null">
+                #{userAccount,jdbcType=VARCHAR},
+            </if>
+            <if test="userPassword != null">
+                #{userPassword,jdbcType=VARCHAR},
+            </if>
+            <if test="userNickname != null">
+                #{userNickname,jdbcType=VARCHAR},
+            </if>
+            <if test="userPhone != null">
+                #{userPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="userEmail != null">
+                #{userEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="userBirth != null">
+                #{userBirth,jdbcType=VARCHAR},
+            </if>
+            <if test="userSex != null">
+                #{userSex,jdbcType=TINYINT},
+            </if>
+            <if test="gmtCreate != null">
+                #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="gmtModified != null">
+                #{gmtModified,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.madisoon.cloud.entity.SysUser">
+        update sys_user
+        <set>
+            <if test="userAccount != null">
+                user_account = #{userAccount,jdbcType=VARCHAR},
+            </if>
+            <if test="userPassword != null">
+                user_password = #{userPassword,jdbcType=VARCHAR},
+            </if>
+            <if test="userNickname != null">
+                user_nickname = #{userNickname,jdbcType=VARCHAR},
+            </if>
+            <if test="userPhone != null">
+                user_phone = #{userPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="userEmail != null">
+                user_email = #{userEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="userBirth != null">
+                user_birth = #{userBirth,jdbcType=VARCHAR},
+            </if>
+            <if test="userSex != null">
+                user_sex = #{userSex,jdbcType=TINYINT},
+            </if>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.madisoon.cloud.entity.SysUser">
+        update sys_user
+        set user_account  = #{userAccount,jdbcType=VARCHAR},
+            user_password = #{userPassword,jdbcType=VARCHAR},
+            user_nickname = #{userNickname,jdbcType=VARCHAR},
+            user_phone    = #{userPhone,jdbcType=VARCHAR},
+            user_email    = #{userEmail,jdbcType=VARCHAR},
+            user_birth    = #{userBirth,jdbcType=VARCHAR},
+            user_sex      = #{userSex,jdbcType=TINYINT},
+            gmt_create    = #{gmtCreate,jdbcType=TIMESTAMP},
+            gmt_modified  = #{gmtModified,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <select id="getUserByAccount" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_user
+        where user_account = #{account,jdbcType=VARCHAR}
+    </select>
+</mapper>

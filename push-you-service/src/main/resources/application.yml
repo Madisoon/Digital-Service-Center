@@ -1,6 +1,9 @@
 server:
   port: 5611
 
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+
 spring:
   application:
     name: push-you-service

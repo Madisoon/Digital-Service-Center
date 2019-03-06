@@ -2,7 +2,7 @@ spring:
   ### mysql数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/yuqingmanage
+    url: jdbc:mysql://localhost:3306/digital_service
     username: root
     password: root123!
 
