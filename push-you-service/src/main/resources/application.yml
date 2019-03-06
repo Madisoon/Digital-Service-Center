@@ -5,6 +5,8 @@ mybatis:
   mapper-locations: classpath:mapping/*.xml
 
 spring:
+  main:
+    allow-bean-definition-overriding: true
   application:
     name: push-you-service
   zipkin:

@@ -31,7 +31,6 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @EnableDiscoveryClient
 @RefreshScope
-@EnableRedisHttpSession(maxInactiveIntervalInSeconds = 86400 * 30)
 public class PushYouServiceApplication {
     private final static Logger LOGGER = LoggerFactory.getLogger(PushYouServiceApplication.class);
 
