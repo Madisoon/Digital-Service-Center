@@ -1,7 +1,7 @@
 package com.madisoon.cloud.mapper;
 
 import com.madisoon.cloud.entity.SysUser;
-import org.mapstruct.Mapper;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
 /**

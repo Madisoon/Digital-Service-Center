@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.madisoon.cloud.mapper.SysTagMapper">
+    <resultMap id="BaseResultMap" type="com.madisoon.cloud.entity.SysTag">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="tag_name" jdbcType="VARCHAR" property="tagName"/>
+        <result column="tag_index" jdbcType="VARCHAR" property="tagIndex"/>
+        <result column="tag_parent" jdbcType="BIGINT" property="tagParent"/>
+        <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate"/>
+        <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, tag_name, tag_index, tag_parent, gmt_create, gmt_modified
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_tag
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        delete
+        from sys_tag
+        where id = #{id,jdbcType=BIGINT}
+    </delete>
+    <insert id="insert" parameterType="com.madisoon.cloud.entity.SysTag">
+        insert into sys_tag (id, tag_name, tag_index, tag_parent, gmt_create, gmt_modified)
+        values (#{id,jdbcType=BIGINT},
+                #{tagName,jdbcType=VARCHAR},
+                #{tagIndex,jdbcType=VARCHAR},
+                #{tagParent,jdbcType=BIGINT},
+                #{gmtCreate,jdbcType=TIMESTAMP},
+                #{gmtModified,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insertSelective" parameterType="com.madisoon.cloud.entity.SysTag">
+        insert into sys_tag
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="tagName != null">
+                tag_name,
+            </if>
+            <if test="tagIndex != null">
+                tag_index,
+            </if>
+            <if test="tagParent != null">
+                tag_parent,
+            </if>
+            <if test="gmtCreate != null">
+                gmt_create,
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="tagName != null">
+                #{tagName,jdbcType=VARCHAR},
+            </if>
+            <if test="tagIndex != null">
+                #{tagIndex,jdbcType=VARCHAR},
+            </if>
+            <if test="tagParent != null">
+                #{tagParent,jdbcType=BIGINT},
+            </if>
+            <if test="gmtCreate != null">
+                #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="gmtModified != null">
+                #{gmtModified,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.madisoon.cloud.entity.SysTag">
+        update sys_tag
+        <set>
+            <if test="tagName != null">
+                tag_name = #{tagName,jdbcType=VARCHAR},
+            </if>
+            <if test="tagIndex != null">
+                tag_index = #{tagIndex,jdbcType=VARCHAR},
+            </if>
+            <if test="tagParent != null">
+                tag_parent = #{tagParent,jdbcType=BIGINT},
+            </if>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="gmtModified != null">
+                gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.madisoon.cloud.entity.SysTag">
+        update sys_tag
+        set tag_name     = #{tagName,jdbcType=VARCHAR},
+            tag_index    = #{tagIndex,jdbcType=VARCHAR},
+            tag_parent   = #{tagParent,jdbcType=BIGINT},
+            gmt_create   = #{gmtCreate,jdbcType=TIMESTAMP},
+            gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <select id="listAllTag" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_tag
+    </select>
+    <select id="listTagIndex" resultType="java.util.Map">
+        select tag_index as tagIndex
+        from sys_tag
+        group by tag_index
+    </select>
+</mapper>

@@ -53,10 +53,10 @@ public class SystemUserService {
             map.put("userInformation", sysUser);
             String audience = "Push You";
             long time = 14L;
-            // 生成token
+/*            // 生成token
             String userToken = jwtService.createPersonToken(map, audience, time);
             // 将session和token放入到redis中
-            stringRedisTemplate.opsForValue().set(sessionId, userToken, time, TimeUnit.DAYS);
+            stringRedisTemplate.opsForValue().set(sessionId, userToken, time, TimeUnit.DAYS);*/
 
             sysUser.setUserPassword("");
             result.put("status", 1);
