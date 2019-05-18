@@ -1,0 +1,780 @@
+2018-12-12 21:28:26.613 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2a012639] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:28:26.909 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2018-12-12 21:28:27.043 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:5200/. Will be trying the next url if available
+2018-12-12 21:28:27.051 [main] INFO  com.madisoon.cloud.YuqingServiceApplication - No active profile set, falling back to default profiles: default
+2018-12-12 21:28:28.659 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=4d658b6a-2412-3868-a011-813d4118d4cd
+2018-12-12 21:28:28.693 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2018-12-12 21:28:28.708 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2018-12-12 21:28:28.717 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2018-12-12 21:28:28.741 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d452e16a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:28:29.155 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$78d8de6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:28:29.175 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$546ae98b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:28:29.187 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$8d529258] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:28:29.196 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:28:29.238 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:28:29.262 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2a012639] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:28:29.786 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5611 (http)
+2018-12-12 21:28:29.807 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5611"]
+2018-12-12 21:28:29.814 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-12 21:28:29.814 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-12 21:28:29.835 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/zg/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-12 21:28:29.977 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-12 21:28:29.977 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2899 ms
+2018-12-12 21:28:30.200 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-12 21:28:30.213 [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6dae70f9
+2018-12-12 21:28:31.368 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-12 21:28:31.368 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-12-12 21:28:31.368 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2018-12-12 21:28:31.368 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-12-12 21:28:31.368 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-12 21:28:31.369 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2018-12-12 21:28:31.369 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-12 21:28:31.369 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2018-12-12 21:28:31.369 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-12 21:28:32.018 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 0 endpoint(s) beneath base path '/actuator'
+2018-12-12 21:28:32.170 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-12-12 21:28:32.200 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-12 21:28:32.440 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-12 21:28:33.693 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2018-12-12 21:28:34.014 [main] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel nullChannel
+2018-12-12 21:28:34.028 [main] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel errorChannel
+2018-12-12 21:28:34.086 [main] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageHandler errorLogger
+2018-12-12 21:28:34.119 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-12-12 21:28:34.120 [main] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 1 subscriber(s).
+2018-12-12 21:28:34.120 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - started _org.springframework.integration.errorLogger
+2018-12-12 21:28:34.138 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2018-12-12 21:28:34.185 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2018-12-12 21:28:34.407 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2018-12-12 21:28:34.407 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2018-12-12 21:28:34.545 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2018-12-12 21:28:34.545 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2018-12-12 21:28:34.765 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-12 21:28:34.787 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:28:34.787 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:28:34.787 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:28:34.787 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:28:34.787 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:28:34.787 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:28:34.787 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:28:34.891 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2018-12-12 21:28:34.899 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-12 21:28:34.906 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1544621314905 with initial instances count: 0
+2018-12-12 21:28:34.913 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application yuqing-service with eureka with status UP
+2018-12-12 21:28:34.913 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1544621314913, current=UP, previous=STARTING]
+2018-12-12 21:28:34.915 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:28:34.918 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-12-12 21:28:34.940 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-12-12 21:28:34.978 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-12-12 21:28:35.393 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:35.400 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start
+2018-12-12 21:28:35.409 [SimpleAsyncTaskExecutor-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:35.415 [SimpleAsyncTaskExecutor-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:35.455 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5611"]
+2018-12-12 21:28:35.476 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-12 21:28:35.491 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5611 (http) with context path ''
+2018-12-12 21:28:35.494 [main] INFO  com.madisoon.cloud.YuqingServiceApplication - Started YuqingServiceApplication in 10.643 seconds (JVM running for 11.541)
+2018-12-12 21:28:35.907 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:35.930 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2018-12-12 21:28:35.933 [RMI TCP Connection(8)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-12 21:28:35.933 [RMI TCP Connection(8)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2018-12-12 21:28:35.937 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:5200/. Will be trying the next url if available
+2018-12-12 21:28:35.956 [RMI TCP Connection(8)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+2018-12-12 21:28:40.492 [SimpleAsyncTaskExecutor-1] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@257708e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:28:40.493 [SimpleAsyncTaskExecutor-2] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:40.494 [SimpleAsyncTaskExecutor-2] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:45.567 [SimpleAsyncTaskExecutor-2] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@2bc55c63: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:28:45.568 [SimpleAsyncTaskExecutor-3] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:45.570 [SimpleAsyncTaskExecutor-3] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:50.636 [SimpleAsyncTaskExecutor-3] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@30367a6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:28:50.637 [SimpleAsyncTaskExecutor-4] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:50.639 [SimpleAsyncTaskExecutor-4] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:55.705 [SimpleAsyncTaskExecutor-4] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@7a95105e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:28:55.706 [SimpleAsyncTaskExecutor-5] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:28:55.709 [SimpleAsyncTaskExecutor-5] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:00.786 [SimpleAsyncTaskExecutor-5] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@41e8edce: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:29:00.787 [SimpleAsyncTaskExecutor-6] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:00.789 [SimpleAsyncTaskExecutor-6] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:01.879 [http-nio-5611-exec-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:04.834 [http-nio-5611-exec-3] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:04.893 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:29:04.893 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:29:04.893 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:29:04.894 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:29:04.894 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:29:04.894 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:29:04.899 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:29:04.926 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:29:05.863 [SimpleAsyncTaskExecutor-6] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@5f9f5955: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:29:05.864 [SimpleAsyncTaskExecutor-7] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:05.865 [SimpleAsyncTaskExecutor-7] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:07.783 [http-nio-5611-exec-4] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:10.944 [SimpleAsyncTaskExecutor-7] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@3942a284: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:29:10.945 [SimpleAsyncTaskExecutor-8] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:10.948 [SimpleAsyncTaskExecutor-8] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:16.010 [SimpleAsyncTaskExecutor-8] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@3cf00b38: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:29:16.011 [SimpleAsyncTaskExecutor-9] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:16.012 [SimpleAsyncTaskExecutor-9] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:21.086 [SimpleAsyncTaskExecutor-9] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@22b74d67: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:29:21.087 [SimpleAsyncTaskExecutor-10] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:21.089 [SimpleAsyncTaskExecutor-10] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:21.259 [Thread-29] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2018-12-12 21:29:21.260 [Thread-29] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2018-12-12 21:29:21.263 [Thread-29] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application yuqing-service with eureka with status DOWN
+2018-12-12 21:29:21.263 [Thread-29] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-12-12 21:29:21.263 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:29:21.264 [Thread-29] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 0 subscriber(s).
+2018-12-12 21:29:21.264 [Thread-29] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped _org.springframework.integration.errorLogger
+2018-12-12 21:29:21.264 [Thread-29] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2018-12-12 21:29:21.267 [Thread-29] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-12 21:29:21.269 [Thread-29] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2018-12-12 21:29:21.648 [Thread-29] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: nullChannel
+2018-12-12 21:29:21.649 [Thread-29] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: errorChannel
+2018-12-12 21:29:21.649 [Thread-29] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2018-12-12 21:29:21.649 [Thread-29] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2018-12-12 21:29:25.254 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$53ace934] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:29:25.392 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2018-12-12 21:29:25.477 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:5200/. Will be trying the next url if available
+2018-12-12 21:29:25.481 [main] INFO  com.madisoon.cloud.YuqingServiceApplication - No active profile set, falling back to default profiles: default
+2018-12-12 21:29:26.640 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=4d658b6a-2412-3868-a011-813d4118d4cd
+2018-12-12 21:29:26.659 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2018-12-12 21:29:26.666 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2018-12-12 21:29:26.671 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2018-12-12 21:29:26.685 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$fdfea465] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:29:26.998 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$a284a166] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:29:27.027 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$7e16ac86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:29:27.039 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$b6fe5553] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:29:27.046 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:29:27.084 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:29:27.113 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$53ace934] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:29:27.463 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5611 (http)
+2018-12-12 21:29:27.472 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5611"]
+2018-12-12 21:29:27.476 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-12 21:29:27.476 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-12 21:29:27.481 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/zg/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-12 21:29:27.585 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-12 21:29:27.586 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2088 ms
+2018-12-12 21:29:27.746 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-12 21:29:27.756 [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@65600fb3
+2018-12-12 21:29:28.703 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-12 21:29:28.703 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-12-12 21:29:28.703 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'tracingFilter' to: [/*]
+2018-12-12 21:29:28.703 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-12-12 21:29:28.704 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-12 21:29:28.704 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2018-12-12 21:29:28.704 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-12 21:29:28.704 [main] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2018-12-12 21:29:28.704 [main] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-12 21:29:29.187 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 0 endpoint(s) beneath base path '/actuator'
+2018-12-12 21:29:29.325 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-12-12 21:29:29.353 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-12 21:29:29.602 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-12 21:29:30.574 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2018-12-12 21:29:30.743 [main] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel errorChannel
+2018-12-12 21:29:30.799 [main] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageChannel nullChannel
+2018-12-12 21:29:30.819 [main] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Registering MessageHandler errorLogger
+2018-12-12 21:29:30.857 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-12-12 21:29:30.858 [main] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 1 subscriber(s).
+2018-12-12 21:29:30.858 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - started _org.springframework.integration.errorLogger
+2018-12-12 21:29:30.871 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2018-12-12 21:29:30.897 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2018-12-12 21:29:31.079 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2018-12-12 21:29:31.079 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2018-12-12 21:29:31.172 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2018-12-12 21:29:31.172 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2018-12-12 21:29:31.364 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-12 21:29:31.379 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:29:31.379 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:29:31.379 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:29:31.379 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:29:31.379 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:29:31.379 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:29:31.380 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:29:31.432 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2018-12-12 21:29:31.434 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-12 21:29:31.437 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1544621371436 with initial instances count: 0
+2018-12-12 21:29:31.443 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application yuqing-service with eureka with status UP
+2018-12-12 21:29:31.444 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1544621371444, current=UP, previous=STARTING]
+2018-12-12 21:29:31.445 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:29:31.448 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-12-12 21:29:31.465 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-12-12 21:29:31.490 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-12-12 21:29:31.859 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:31.862 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Broker not available; cannot force queue declarations during start
+2018-12-12 21:29:31.867 [SimpleAsyncTaskExecutor-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:31.872 [SimpleAsyncTaskExecutor-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:31.905 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5611"]
+2018-12-12 21:29:31.926 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-12 21:29:31.937 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5611 (http) with context path ''
+2018-12-12 21:29:31.941 [main] INFO  com.madisoon.cloud.YuqingServiceApplication - Started YuqingServiceApplication in 7.872 seconds (JVM running for 9.106)
+2018-12-12 21:29:32.386 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:32.398 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-12 21:29:32.398 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2018-12-12 21:29:32.401 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2018-12-12 21:29:32.408 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:5200/. Will be trying the next url if available
+2018-12-12 21:29:32.422 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2018-12-12 21:29:36.957 [SimpleAsyncTaskExecutor-1] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@2dd4a7a9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:29:36.958 [SimpleAsyncTaskExecutor-2] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:36.959 [SimpleAsyncTaskExecutor-2] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:42.037 [SimpleAsyncTaskExecutor-2] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@450badc9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:29:42.038 [SimpleAsyncTaskExecutor-3] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:42.039 [SimpleAsyncTaskExecutor-3] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:47.108 [SimpleAsyncTaskExecutor-3] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@280dbcaa: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:29:47.109 [SimpleAsyncTaskExecutor-4] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:47.111 [SimpleAsyncTaskExecutor-4] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:52.181 [SimpleAsyncTaskExecutor-4] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@7e64b7df: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:29:52.182 [SimpleAsyncTaskExecutor-5] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:52.184 [SimpleAsyncTaskExecutor-5] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:57.270 [SimpleAsyncTaskExecutor-5] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@39548830: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:29:57.272 [SimpleAsyncTaskExecutor-6] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:29:57.274 [SimpleAsyncTaskExecutor-6] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:01.435 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:30:01.436 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:30:01.436 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:30:01.436 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:30:01.436 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:30:01.436 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:30:01.436 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:30:01.457 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:30:02.348 [SimpleAsyncTaskExecutor-6] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@586bdcd6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:02.350 [SimpleAsyncTaskExecutor-7] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:02.354 [SimpleAsyncTaskExecutor-7] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:07.437 [SimpleAsyncTaskExecutor-7] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@344eac82: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:07.438 [SimpleAsyncTaskExecutor-8] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:07.439 [SimpleAsyncTaskExecutor-8] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:12.508 [SimpleAsyncTaskExecutor-8] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@53d09038: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:12.510 [SimpleAsyncTaskExecutor-9] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:12.511 [SimpleAsyncTaskExecutor-9] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:17.577 [SimpleAsyncTaskExecutor-9] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@cf35b57: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:17.578 [SimpleAsyncTaskExecutor-10] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:17.580 [SimpleAsyncTaskExecutor-10] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:22.651 [SimpleAsyncTaskExecutor-10] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@1c12e76b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:22.652 [SimpleAsyncTaskExecutor-11] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:22.654 [SimpleAsyncTaskExecutor-11] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:27.740 [SimpleAsyncTaskExecutor-11] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@6aee0ce0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:27.741 [SimpleAsyncTaskExecutor-12] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:27.743 [SimpleAsyncTaskExecutor-12] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:31.443 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:30:31.444 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:30:31.444 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:30:31.444 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:30:31.444 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:30:31.444 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:30:31.444 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:30:31.465 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:30:32.805 [SimpleAsyncTaskExecutor-12] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@531e4739: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:32.805 [SimpleAsyncTaskExecutor-13] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:32.809 [SimpleAsyncTaskExecutor-13] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:37.885 [SimpleAsyncTaskExecutor-13] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@26abb708: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:37.887 [SimpleAsyncTaskExecutor-14] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:37.888 [SimpleAsyncTaskExecutor-14] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:42.969 [SimpleAsyncTaskExecutor-14] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@166ea8f9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:42.970 [SimpleAsyncTaskExecutor-15] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:42.971 [SimpleAsyncTaskExecutor-15] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:48.027 [SimpleAsyncTaskExecutor-15] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@65f6691a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:48.028 [SimpleAsyncTaskExecutor-16] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:48.029 [SimpleAsyncTaskExecutor-16] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:53.088 [SimpleAsyncTaskExecutor-16] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@4130cd44: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:53.089 [SimpleAsyncTaskExecutor-17] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:53.090 [SimpleAsyncTaskExecutor-17] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:58.153 [SimpleAsyncTaskExecutor-17] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@122fef06: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:30:58.154 [SimpleAsyncTaskExecutor-18] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:30:58.156 [SimpleAsyncTaskExecutor-18] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:01.451 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:31:01.452 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:31:01.452 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:31:01.452 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:31:01.452 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:31:01.452 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:31:01.452 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:31:01.470 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:31:03.242 [SimpleAsyncTaskExecutor-18] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@7c041756: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:03.243 [SimpleAsyncTaskExecutor-19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:03.244 [SimpleAsyncTaskExecutor-19] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:08.325 [SimpleAsyncTaskExecutor-19] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@273db9b6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:08.326 [SimpleAsyncTaskExecutor-20] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:08.328 [SimpleAsyncTaskExecutor-20] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:13.411 [SimpleAsyncTaskExecutor-20] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@a90a251: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:13.412 [SimpleAsyncTaskExecutor-21] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:13.414 [SimpleAsyncTaskExecutor-21] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:18.504 [SimpleAsyncTaskExecutor-21] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@18d57c1e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:18.506 [SimpleAsyncTaskExecutor-22] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:18.508 [SimpleAsyncTaskExecutor-22] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:23.589 [SimpleAsyncTaskExecutor-22] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@68e54d00: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:23.590 [SimpleAsyncTaskExecutor-23] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:23.591 [SimpleAsyncTaskExecutor-23] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:28.679 [SimpleAsyncTaskExecutor-23] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@2ef6f6ed: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:28.680 [SimpleAsyncTaskExecutor-24] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:28.682 [SimpleAsyncTaskExecutor-24] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:31.458 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:31:31.459 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:31:31.459 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:31:31.459 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:31:31.459 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:31:31.459 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:31:31.459 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:31:31.476 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:31:33.750 [SimpleAsyncTaskExecutor-24] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@79b77b04: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:33.751 [SimpleAsyncTaskExecutor-25] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:33.753 [SimpleAsyncTaskExecutor-25] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:38.822 [SimpleAsyncTaskExecutor-25] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@17ed1d3c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:38.823 [SimpleAsyncTaskExecutor-26] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:38.824 [SimpleAsyncTaskExecutor-26] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:43.898 [SimpleAsyncTaskExecutor-26] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@88b024f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:43.900 [SimpleAsyncTaskExecutor-27] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:43.901 [SimpleAsyncTaskExecutor-27] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:48.971 [SimpleAsyncTaskExecutor-27] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@59eee8fc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:48.972 [SimpleAsyncTaskExecutor-28] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:48.973 [SimpleAsyncTaskExecutor-28] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:54.054 [SimpleAsyncTaskExecutor-28] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@5f332c97: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:54.055 [SimpleAsyncTaskExecutor-29] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:54.056 [SimpleAsyncTaskExecutor-29] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:59.137 [SimpleAsyncTaskExecutor-29] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@6ddf8b9d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:31:59.138 [SimpleAsyncTaskExecutor-30] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:31:59.140 [SimpleAsyncTaskExecutor-30] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:01.462 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:32:01.463 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:32:01.463 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:32:01.463 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:32:01.463 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:32:01.463 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:32:01.464 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:32:01.483 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:32:04.225 [SimpleAsyncTaskExecutor-30] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@618b923: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:04.226 [SimpleAsyncTaskExecutor-31] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:04.228 [SimpleAsyncTaskExecutor-31] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:09.308 [SimpleAsyncTaskExecutor-31] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@2bec53fe: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:09.309 [SimpleAsyncTaskExecutor-32] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:09.310 [SimpleAsyncTaskExecutor-32] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:14.373 [SimpleAsyncTaskExecutor-32] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@5cd21b21: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:14.374 [SimpleAsyncTaskExecutor-33] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:14.375 [SimpleAsyncTaskExecutor-33] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:19.438 [SimpleAsyncTaskExecutor-33] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@486b5705: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:19.439 [SimpleAsyncTaskExecutor-34] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:19.440 [SimpleAsyncTaskExecutor-34] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:24.495 [SimpleAsyncTaskExecutor-34] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@983ea0d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:24.496 [SimpleAsyncTaskExecutor-35] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:24.497 [SimpleAsyncTaskExecutor-35] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:29.563 [SimpleAsyncTaskExecutor-35] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@2668f46c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:29.564 [SimpleAsyncTaskExecutor-36] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:29.566 [SimpleAsyncTaskExecutor-36] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:31.473 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:32:31.473 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:32:31.473 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:32:31.474 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:32:31.474 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:32:31.474 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:32:31.474 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:32:31.490 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:32:34.647 [SimpleAsyncTaskExecutor-36] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@2ed509d6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:34.648 [SimpleAsyncTaskExecutor-37] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:34.649 [SimpleAsyncTaskExecutor-37] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:39.700 [SimpleAsyncTaskExecutor-37] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@50e3e99a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:39.701 [SimpleAsyncTaskExecutor-38] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:39.703 [SimpleAsyncTaskExecutor-38] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:44.757 [SimpleAsyncTaskExecutor-38] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@4670bf26: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:44.758 [SimpleAsyncTaskExecutor-39] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:44.759 [SimpleAsyncTaskExecutor-39] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:49.812 [SimpleAsyncTaskExecutor-39] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@1d8ca0ce: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:49.813 [SimpleAsyncTaskExecutor-40] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:49.815 [SimpleAsyncTaskExecutor-40] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:54.866 [SimpleAsyncTaskExecutor-40] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@300f6737: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:54.867 [SimpleAsyncTaskExecutor-41] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:54.869 [SimpleAsyncTaskExecutor-41] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:59.925 [SimpleAsyncTaskExecutor-41] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@71a77806: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:32:59.926 [SimpleAsyncTaskExecutor-42] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:32:59.928 [SimpleAsyncTaskExecutor-42] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:01.482 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:33:01.482 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:33:01.482 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:33:01.482 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:33:01.483 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:33:01.483 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:33:01.483 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:33:01.494 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:33:04.998 [SimpleAsyncTaskExecutor-42] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@6ef90b88: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:04.999 [SimpleAsyncTaskExecutor-43] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:04.999 [SimpleAsyncTaskExecutor-43] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:10.044 [SimpleAsyncTaskExecutor-43] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@6e4da7b9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:10.045 [SimpleAsyncTaskExecutor-44] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:10.046 [SimpleAsyncTaskExecutor-44] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:15.069 [SimpleAsyncTaskExecutor-44] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@60a16b43: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:15.070 [SimpleAsyncTaskExecutor-45] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:15.071 [SimpleAsyncTaskExecutor-45] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:20.114 [SimpleAsyncTaskExecutor-45] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@1e0d649f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:20.115 [SimpleAsyncTaskExecutor-46] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:20.116 [SimpleAsyncTaskExecutor-46] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:25.180 [SimpleAsyncTaskExecutor-46] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@70885ca4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:25.181 [SimpleAsyncTaskExecutor-47] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:25.183 [SimpleAsyncTaskExecutor-47] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:30.256 [SimpleAsyncTaskExecutor-47] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@61db0b39: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:30.257 [SimpleAsyncTaskExecutor-48] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:30.260 [SimpleAsyncTaskExecutor-48] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:31.485 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:33:31.485 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:33:31.486 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:33:31.486 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:33:31.486 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:33:31.486 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:33:31.486 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:33:31.501 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:33:35.347 [SimpleAsyncTaskExecutor-48] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@1269dbb8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:35.348 [SimpleAsyncTaskExecutor-49] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:35.350 [SimpleAsyncTaskExecutor-49] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:40.404 [SimpleAsyncTaskExecutor-49] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@1bf99523: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:40.405 [SimpleAsyncTaskExecutor-50] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:40.407 [SimpleAsyncTaskExecutor-50] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:45.478 [SimpleAsyncTaskExecutor-50] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@7a55cba0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:45.479 [SimpleAsyncTaskExecutor-51] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:45.481 [SimpleAsyncTaskExecutor-51] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:50.541 [SimpleAsyncTaskExecutor-51] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@6fff0435: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:50.542 [SimpleAsyncTaskExecutor-52] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:50.543 [SimpleAsyncTaskExecutor-52] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:55.610 [SimpleAsyncTaskExecutor-52] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@674a7836: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:33:55.611 [SimpleAsyncTaskExecutor-53] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:33:55.612 [SimpleAsyncTaskExecutor-53] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:00.695 [SimpleAsyncTaskExecutor-53] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@6193b528: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:00.696 [SimpleAsyncTaskExecutor-54] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:00.698 [SimpleAsyncTaskExecutor-54] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:01.491 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:34:01.491 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:34:01.491 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:34:01.492 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:34:01.492 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:34:01.492 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:34:01.492 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:34:01.510 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:34:05.771 [SimpleAsyncTaskExecutor-54] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@1b0c0868: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:05.771 [SimpleAsyncTaskExecutor-55] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:05.773 [SimpleAsyncTaskExecutor-55] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:10.844 [SimpleAsyncTaskExecutor-55] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@e807b0d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:10.844 [SimpleAsyncTaskExecutor-56] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:10.846 [SimpleAsyncTaskExecutor-56] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:15.927 [SimpleAsyncTaskExecutor-56] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@23368173: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:15.928 [SimpleAsyncTaskExecutor-57] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:15.929 [SimpleAsyncTaskExecutor-57] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:21.033 [SimpleAsyncTaskExecutor-57] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@62f42e55: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:21.033 [SimpleAsyncTaskExecutor-58] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:21.034 [SimpleAsyncTaskExecutor-58] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:26.113 [SimpleAsyncTaskExecutor-58] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@50baef90: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:26.114 [SimpleAsyncTaskExecutor-59] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:26.115 [SimpleAsyncTaskExecutor-59] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:31.173 [SimpleAsyncTaskExecutor-59] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@35aaf64f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:31.174 [SimpleAsyncTaskExecutor-60] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:31.176 [SimpleAsyncTaskExecutor-60] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:31.391 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-12 21:34:31.497 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:34:31.497 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:34:31.497 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:34:31.497 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:34:31.497 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:34:31.497 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:34:31.498 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:34:31.513 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:34:36.234 [SimpleAsyncTaskExecutor-60] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@49c2b056: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:36.234 [SimpleAsyncTaskExecutor-61] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:36.236 [SimpleAsyncTaskExecutor-61] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:41.337 [SimpleAsyncTaskExecutor-61] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@29645367: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:41.338 [SimpleAsyncTaskExecutor-62] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:41.339 [SimpleAsyncTaskExecutor-62] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:46.399 [SimpleAsyncTaskExecutor-62] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@3b8631e9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:46.400 [SimpleAsyncTaskExecutor-63] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:46.401 [SimpleAsyncTaskExecutor-63] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:51.448 [SimpleAsyncTaskExecutor-63] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@417ea928: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:51.449 [SimpleAsyncTaskExecutor-64] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:51.451 [SimpleAsyncTaskExecutor-64] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:56.524 [SimpleAsyncTaskExecutor-64] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@3e6947dd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:34:56.525 [SimpleAsyncTaskExecutor-65] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:34:56.526 [SimpleAsyncTaskExecutor-65] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:01.500 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:35:01.500 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:35:01.500 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:35:01.500 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:35:01.501 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:35:01.501 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:35:01.501 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:35:01.518 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:35:01.629 [SimpleAsyncTaskExecutor-65] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@1bc69c5a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:01.630 [SimpleAsyncTaskExecutor-66] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:01.631 [SimpleAsyncTaskExecutor-66] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:06.717 [SimpleAsyncTaskExecutor-66] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@10c12b8f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:06.718 [SimpleAsyncTaskExecutor-67] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:06.719 [SimpleAsyncTaskExecutor-67] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:11.801 [SimpleAsyncTaskExecutor-67] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@4455e830: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:11.802 [SimpleAsyncTaskExecutor-68] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:11.804 [SimpleAsyncTaskExecutor-68] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:16.863 [SimpleAsyncTaskExecutor-68] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@9f12a83: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:16.863 [SimpleAsyncTaskExecutor-69] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:16.865 [SimpleAsyncTaskExecutor-69] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:21.930 [SimpleAsyncTaskExecutor-69] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@58739176: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:21.931 [SimpleAsyncTaskExecutor-70] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:21.931 [SimpleAsyncTaskExecutor-70] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:27.007 [SimpleAsyncTaskExecutor-70] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@b1a9bca: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:27.008 [SimpleAsyncTaskExecutor-71] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:27.010 [SimpleAsyncTaskExecutor-71] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:31.506 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:35:31.506 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:35:31.506 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:35:31.507 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:35:31.507 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:35:31.507 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:35:31.507 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:35:31.525 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:35:32.074 [SimpleAsyncTaskExecutor-71] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@4f3372d8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:32.075 [SimpleAsyncTaskExecutor-72] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:32.076 [SimpleAsyncTaskExecutor-72] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:37.137 [SimpleAsyncTaskExecutor-72] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@189eb925: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:37.137 [SimpleAsyncTaskExecutor-73] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:37.138 [SimpleAsyncTaskExecutor-73] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:42.182 [SimpleAsyncTaskExecutor-73] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@93aaf12: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:42.183 [SimpleAsyncTaskExecutor-74] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:42.184 [SimpleAsyncTaskExecutor-74] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:47.231 [SimpleAsyncTaskExecutor-74] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@370a804e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:47.232 [SimpleAsyncTaskExecutor-75] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:47.233 [SimpleAsyncTaskExecutor-75] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:52.270 [SimpleAsyncTaskExecutor-75] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@4982303f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:52.271 [SimpleAsyncTaskExecutor-76] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:52.272 [SimpleAsyncTaskExecutor-76] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:57.330 [SimpleAsyncTaskExecutor-76] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@1012f895: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:35:57.331 [SimpleAsyncTaskExecutor-77] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:35:57.332 [SimpleAsyncTaskExecutor-77] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:01.513 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:36:01.514 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:36:01.514 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:36:01.514 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:36:01.514 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:36:01.514 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:36:01.514 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:36:01.529 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:36:02.379 [SimpleAsyncTaskExecutor-77] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@68b383ff: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:02.380 [SimpleAsyncTaskExecutor-78] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:02.382 [SimpleAsyncTaskExecutor-78] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:07.431 [SimpleAsyncTaskExecutor-78] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@5fd9e8c9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:07.431 [SimpleAsyncTaskExecutor-79] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:07.432 [SimpleAsyncTaskExecutor-79] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:12.468 [SimpleAsyncTaskExecutor-79] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@1b206552: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:12.469 [SimpleAsyncTaskExecutor-80] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:12.470 [SimpleAsyncTaskExecutor-80] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:17.514 [SimpleAsyncTaskExecutor-80] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@307ace0d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:17.515 [SimpleAsyncTaskExecutor-81] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:17.516 [SimpleAsyncTaskExecutor-81] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:22.546 [SimpleAsyncTaskExecutor-81] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@118fa850: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:22.546 [SimpleAsyncTaskExecutor-82] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:22.548 [SimpleAsyncTaskExecutor-82] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:27.597 [SimpleAsyncTaskExecutor-82] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@4bb348d9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:27.598 [SimpleAsyncTaskExecutor-83] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:27.599 [SimpleAsyncTaskExecutor-83] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:31.518 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:36:31.518 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:36:31.518 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:36:31.518 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:36:31.518 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:36:31.518 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:36:31.518 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:36:31.533 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:36:32.632 [SimpleAsyncTaskExecutor-83] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@709bc27: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:32.633 [SimpleAsyncTaskExecutor-84] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:32.634 [SimpleAsyncTaskExecutor-84] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:37.683 [SimpleAsyncTaskExecutor-84] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@5dddef71: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:37.684 [SimpleAsyncTaskExecutor-85] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:37.685 [SimpleAsyncTaskExecutor-85] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:42.750 [SimpleAsyncTaskExecutor-85] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@28c8dd58: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:42.751 [SimpleAsyncTaskExecutor-86] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:42.752 [SimpleAsyncTaskExecutor-86] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:47.848 [SimpleAsyncTaskExecutor-86] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@4c3be316: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:47.849 [SimpleAsyncTaskExecutor-87] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:47.850 [SimpleAsyncTaskExecutor-87] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:52.906 [SimpleAsyncTaskExecutor-87] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@42fab03: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:52.907 [SimpleAsyncTaskExecutor-88] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:52.907 [SimpleAsyncTaskExecutor-88] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:57.943 [SimpleAsyncTaskExecutor-88] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@3d6c526c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:36:57.944 [SimpleAsyncTaskExecutor-89] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:36:57.945 [SimpleAsyncTaskExecutor-89] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:01.523 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:37:01.524 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:37:01.524 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:37:01.524 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:37:01.524 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:37:01.524 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:37:01.524 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:37:01.536 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:37:03.007 [SimpleAsyncTaskExecutor-89] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@4016166d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:03.008 [SimpleAsyncTaskExecutor-90] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:03.011 [SimpleAsyncTaskExecutor-90] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:08.052 [SimpleAsyncTaskExecutor-90] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@ad1f998: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:08.053 [SimpleAsyncTaskExecutor-91] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:08.054 [SimpleAsyncTaskExecutor-91] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:13.111 [SimpleAsyncTaskExecutor-91] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@512de371: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:13.112 [SimpleAsyncTaskExecutor-92] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:13.114 [SimpleAsyncTaskExecutor-92] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:18.187 [SimpleAsyncTaskExecutor-92] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@55d341fc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:18.187 [SimpleAsyncTaskExecutor-93] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:18.189 [SimpleAsyncTaskExecutor-93] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:23.260 [SimpleAsyncTaskExecutor-93] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@3ad76cba: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:23.260 [SimpleAsyncTaskExecutor-94] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:23.262 [SimpleAsyncTaskExecutor-94] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:28.318 [SimpleAsyncTaskExecutor-94] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@7947494e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:28.319 [SimpleAsyncTaskExecutor-95] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:28.321 [SimpleAsyncTaskExecutor-95] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:31.530 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:37:31.530 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:37:31.530 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:37:31.531 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:37:31.531 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:37:31.531 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:37:31.531 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:37:31.543 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:37:33.392 [SimpleAsyncTaskExecutor-95] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@68c40119: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:33.393 [SimpleAsyncTaskExecutor-96] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:33.394 [SimpleAsyncTaskExecutor-96] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:38.450 [SimpleAsyncTaskExecutor-96] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@31c7b43: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:38.451 [SimpleAsyncTaskExecutor-97] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:38.452 [SimpleAsyncTaskExecutor-97] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:43.521 [SimpleAsyncTaskExecutor-97] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@79dd941e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:43.521 [SimpleAsyncTaskExecutor-98] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:43.523 [SimpleAsyncTaskExecutor-98] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:48.588 [SimpleAsyncTaskExecutor-98] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@465166a5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:48.589 [SimpleAsyncTaskExecutor-99] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:48.591 [SimpleAsyncTaskExecutor-99] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:53.670 [SimpleAsyncTaskExecutor-99] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@21f23b32: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:53.671 [SimpleAsyncTaskExecutor-100] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:53.672 [SimpleAsyncTaskExecutor-100] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:58.750 [SimpleAsyncTaskExecutor-100] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@310981b5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:37:58.751 [SimpleAsyncTaskExecutor-101] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:37:58.752 [SimpleAsyncTaskExecutor-101] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:01.537 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:38:01.537 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:38:01.537 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:38:01.538 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:38:01.538 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:38:01.538 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:38:01.538 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:38:01.550 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:38:03.841 [SimpleAsyncTaskExecutor-101] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@3359025d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:38:03.842 [SimpleAsyncTaskExecutor-102] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:03.844 [SimpleAsyncTaskExecutor-102] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:08.918 [SimpleAsyncTaskExecutor-102] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@4fe6f41a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:38:08.918 [SimpleAsyncTaskExecutor-103] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:08.919 [SimpleAsyncTaskExecutor-103] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:14.003 [SimpleAsyncTaskExecutor-103] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@47597abd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:38:14.003 [SimpleAsyncTaskExecutor-104] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:14.004 [SimpleAsyncTaskExecutor-104] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:19.087 [SimpleAsyncTaskExecutor-104] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@5f0ecbef: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:38:19.088 [SimpleAsyncTaskExecutor-105] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:19.089 [SimpleAsyncTaskExecutor-105] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:24.169 [SimpleAsyncTaskExecutor-105] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@56f7b124: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:38:24.171 [SimpleAsyncTaskExecutor-106] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:24.172 [SimpleAsyncTaskExecutor-106] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:29.240 [SimpleAsyncTaskExecutor-106] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@2db95abf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:38:29.241 [SimpleAsyncTaskExecutor-107] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:29.242 [SimpleAsyncTaskExecutor-107] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:31.543 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-12 21:38:31.543 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-12 21:38:31.543 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-12 21:38:31.543 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-12 21:38:31.543 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-12 21:38:31.543 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-12 21:38:31.543 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-12 21:38:31.555 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:38:34.311 [SimpleAsyncTaskExecutor-107] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@58af46f0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:38:34.312 [SimpleAsyncTaskExecutor-108] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:34.313 [SimpleAsyncTaskExecutor-108] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:39.395 [SimpleAsyncTaskExecutor-108] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@7fc2561d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:38:39.395 [SimpleAsyncTaskExecutor-109] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:39.396 [SimpleAsyncTaskExecutor-109] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:44.464 [SimpleAsyncTaskExecutor-109] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Restarting Consumer@25e46e13: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-12-12 21:38:44.465 [SimpleAsyncTaskExecutor-110] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:44.466 [SimpleAsyncTaskExecutor-110] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2018-12-12 21:38:48.272 [Thread-24] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2018-12-12 21:38:48.272 [Thread-24] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2018-12-12 21:38:48.276 [Thread-24] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application yuqing-service with eureka with status DOWN
+2018-12-12 21:38:48.276 [Thread-24] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-12-12 21:38:48.276 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_YUQING-SERVICE/192.168.0.102:yuqing-service:5611: registering service...
+2018-12-12 21:38:48.276 [Thread-24] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application-1.errorChannel' has 0 subscriber(s).
+2018-12-12 21:38:48.277 [Thread-24] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped _org.springframework.integration.errorLogger
+2018-12-12 21:38:48.277 [Thread-24] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2018-12-12 21:38:48.279 [Thread-24] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-12 21:38:48.280 [Thread-24] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2018-12-12 21:38:48.556 [Thread-24] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: errorChannel
+2018-12-12 21:38:48.556 [Thread-24] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: nullChannel
+2018-12-12 21:38:48.556 [Thread-24] INFO  o.s.integration.monitor.IntegrationMBeanExporter - Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2018-12-12 21:38:48.557 [Thread-24] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2018-12-12 21:38:57.372 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1e6454ec: startup date [Wed Dec 12 21:38:57 CST 2018]; root of context hierarchy
+2018-12-12 21:38:57.591 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-12 21:38:57.628 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$322ca36f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:38:57.768 [main] INFO  com.madisoon.cloud.EurekaServiceApplication - No active profile set, falling back to default profiles: default
+2018-12-12 21:38:57.778 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45312be2: startup date [Wed Dec 12 21:38:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1e6454ec
+2018-12-12 21:38:58.678 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=f5439a5d-5339-3154-b24a-835a6a67d3d4
+2018-12-12 21:38:58.697 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-12 21:38:58.774 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$322ca36f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-12 21:38:59.155 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8761 (http)
+2018-12-12 21:38:59.172 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+2018-12-12 21:38:59.182 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-12 21:38:59.183 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-12-12 21:38:59.186 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/zg/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-12 21:38:59.317 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-12 21:38:59.318 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1539 ms
+2018-12-12 21:38:59.577 [localhost-startStop-1] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-12 21:38:59.588 [localhost-startStop-1] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4e548475
+2018-12-12 21:39:00.301 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-12 21:39:00.302 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-12-12 21:39:00.302 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-12 21:39:00.302 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-12 21:39:00.302 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-12 21:39:00.302 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2018-12-12 21:39:00.302 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2018-12-12 21:39:00.303 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-12 21:39:00.396 [localhost-startStop-1] INFO  c.s.j.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2018-12-12 21:39:00.467 [localhost-startStop-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2018-12-12 21:39:00.468 [localhost-startStop-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2018-12-12 21:39:00.576 [localhost-startStop-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2018-12-12 21:39:00.577 [localhost-startStop-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2018-12-12 21:39:00.989 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-12 21:39:01.052 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-12 21:39:01.230 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45312be2: startup date [Wed Dec 12 21:38:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1e6454ec
+2018-12-12 21:39:01.291 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-12 21:39:01.292 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-12 21:39:01.298 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-12 21:39:01.299 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2018-12-12 21:39:01.316 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-12 21:39:01.316 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-12 21:39:01.739 [main] INFO  o.s.ui.freemarker.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@45312be2: startup date [Wed Dec 12 21:38:57 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1e6454ec] and template loader path [classpath:/templates/]
+2018-12-12 21:39:01.741 [main] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-12-12 21:39:01.913 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2018-12-12 21:39:01.949 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2018-12-12 21:39:01.949 [main] INFO  com.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2018-12-12 21:39:01.961 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1544621941960 with initial instances count: 0
+2018-12-12 21:39:02.017 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext - Initializing ...
+2018-12-12 21:39:02.032 [main] INFO  c.netflix.eureka.registry.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2018-12-12 21:39:02.033 [main] INFO  com.netflix.eureka.DefaultEurekaServerContext - Initialized
+2018-12-12 21:39:02.059 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-12-12 21:39:02.069 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-12 21:39:02.069 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-12 21:39:02.070 [main] INFO  o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-12 21:39:02.130 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-12 21:39:02.138 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-12-12 21:39:02.139 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-12-12 21:39:02.140 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-12-12 21:39:02.143 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-12-12 21:39:02.155 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-12-12 21:39:02.167 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=45312be2,type=ConfigurationPropertiesRebinder]
+2018-12-12 21:39:02.175 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-12-12 21:39:02.184 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application config-service with eureka with status UP
+2018-12-12 21:39:02.188 [Thread-24] INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap - Setting the eureka configuration..
+2018-12-12 21:39:02.188 [Thread-24] INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+2018-12-12 21:39:02.189 [Thread-24] INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+2018-12-12 21:39:02.204 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+2018-12-12 21:39:02.210 [Thread-24] INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap - isAws returned false
+2018-12-12 21:39:02.210 [Thread-24] INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap - Initialized server context
+2018-12-12 21:39:02.210 [Thread-24] INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2018-12-12 21:39:02.210 [Thread-24] INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2018-12-12 21:39:02.210 [Thread-24] INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Changing status to UP
+2018-12-12 21:39:02.225 [Thread-24] INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2018-12-12 21:39:02.248 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-12 21:39:02.266 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8761 (http) with context path ''
+2018-12-12 21:39:02.268 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2018-12-12 21:39:02.271 [main] INFO  com.madisoon.cloud.EurekaServiceApplication - Started EurekaServiceApplication in 5.849 seconds (JVM running for 6.717)
+2018-12-12 21:39:02.786 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-12-12 21:39:02.787 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-12 21:39:02.810 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-12-12 21:39:27.745 [http-nio-8761-exec-2] INFO  c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance GATEWAY-SERVICE/192.168.0.102:gateway-service:5678 with status UP (replication=false)
+2018-12-12 21:40:02.231 [Eureka-EvictionTimer] INFO  c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms

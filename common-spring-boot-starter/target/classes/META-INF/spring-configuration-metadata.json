@@ -1,0 +1,58 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.madisoon.starter.jwt.JwtServiceProperties",
+      "name": "jwt",
+      "type": "com.madisoon.starter.jwt.JwtServiceProperties"
+    },
+    {
+      "sourceType": "com.madisoon.starter.email.JavaMailProperties",
+      "name": "mail",
+      "type": "com.madisoon.starter.email.JavaMailProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.madisoon.starter.jwt.JwtServiceProperties",
+      "name": "jwt.base64-security",
+      "description": "密钥 系统的简称",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.madisoon.starter.jwt.JwtServiceProperties",
+      "name": "jwt.issuer",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.madisoon.starter.email.JavaMailProperties",
+      "name": "mail.account",
+      "description": "邮箱账号",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.madisoon.starter.email.JavaMailProperties",
+      "name": "mail.from",
+      "description": "发送人备注",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.madisoon.starter.email.JavaMailProperties",
+      "name": "mail.host",
+      "description": "STMPHOST",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.madisoon.starter.email.JavaMailProperties",
+      "name": "mail.password",
+      "description": "邮箱密码",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.madisoon.starter.email.JavaMailProperties",
+      "name": "mail.to",
+      "description": "接收人备注",
+      "type": "java.lang.String"
+    }
+  ]
+}

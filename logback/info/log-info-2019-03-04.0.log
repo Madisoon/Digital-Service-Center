@@ -1,0 +1,48 @@
+2019-03-05 08:38:56.472 [http-nio-5611-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 08:39:05.096 [http-nio-5611-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 08:39:34.992 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 08:43:57.564 [http-nio-5611-exec-3] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 08:43:59.925 [http-nio-5611-exec-3] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 08:44:35.010 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 08:48:57.544 [http-nio-5611-exec-7] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 08:48:59.942 [http-nio-5611-exec-7] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 08:49:35.021 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 08:53:57.559 [http-nio-5611-exec-3] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 08:53:59.972 [http-nio-5611-exec-3] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 08:54:35.021 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 08:59:17.533 [http-nio-5611-exec-8] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 08:59:19.819 [http-nio-5611-exec-8] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 08:59:35.033 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:04:17.543 [http-nio-5611-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:04:20.010 [http-nio-5611-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 09:04:35.047 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:09:17.544 [http-nio-5611-exec-8] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:09:20.238 [http-nio-5611-exec-8] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 09:09:35.048 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:14:35.058 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:14:37.535 [http-nio-5611-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:14:40.049 [http-nio-5611-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 09:19:35.070 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:19:37.548 [http-nio-5611-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:19:40.138 [http-nio-5611-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 09:24:35.108 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:24:37.566 [http-nio-5611-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:24:40.365 [http-nio-5611-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 09:29:35.130 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:29:37.577 [http-nio-5611-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:29:41.622 [http-nio-5611-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 09:34:35.146 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:34:37.572 [http-nio-5611-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:34:41.289 [http-nio-5611-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 09:39:35.156 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:39:37.591 [http-nio-5611-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:39:40.136 [http-nio-5611-exec-9] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 09:44:35.173 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:44:37.597 [http-nio-5611-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:44:40.212 [http-nio-5611-exec-5] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 09:49:35.177 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:49:57.621 [http-nio-5611-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:50:00.039 [http-nio-5611-exec-2] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
+2019-03-05 09:54:35.193 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-03-05 09:54:57.670 [http-nio-5611-exec-8] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:5200/
+2019-03-05 09:55:00.078 [http-nio-5611-exec-8] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=yuqing-service, profiles=[dev], label=master, version=c5d9a00c2694a6a2626e0b8b67a000e2ec82c01e, state=null
